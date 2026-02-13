@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* هنا تضع كود الـ CSS الذي يبدأ بـ :root أو body */
+        @import url('https://fonts.googleapis.com/css2?family=Amiri&family=Reem+Kufi&display=swap');
+        :root { --gold: #D4AF37; --black: #0a0a0a; }
+        body { background-color: var(--black); color: white; font-family: 'Amiri', serif; }
+        /* انسخ باقي كود الـ CSS هنا... */
+    </style>
+</head>
+<body>
+
+    <div id="welcome-screen">
+        <h2 class="gold-text">حيّ الله أبو جاسم</h2>
+        <button onclick="startExperience()">إدخال الديوان</button>
+    </div>
+    <div id="main-content" style="display:none;">
+        </div>
+
+    <script>
+        /* هنا تضع كود الـ JS (الوظائف) */
+        function startExperience() {
+            document.getElementById('welcome-screen').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
